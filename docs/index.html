@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Aether snapshot</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { margin: 0; font-family: ui-sans-serif, system-ui, sans-serif; background: #07111c; color: #e8eef5; }
+    main { max-width: 920px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    h1 { letter-spacing: 0.18em; font-size: 0.85rem; color: #7dd3fc; }
+    h2 { font-size: 1.4rem; margin: 0.2rem 0 1rem; }
+    .meta { color: #93a4b8; font-size: 0.9rem; }
+    .risk { display: inline-block; padding: 0.2rem 0.6rem; border: 1px solid #334155; border-radius: 999px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem; margin: 1.25rem 0; }
+    .card { background: #0d1b2a; border: 1px solid #1e3a5f; border-radius: 12px; padding: 0.9rem 1rem; }
+    .label { color: #7dd3fc; font-size: 0.72rem; letter-spacing: 0.08em; }
+    table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.9rem; }
+    th, td { text-align: left; padding: 0.45rem 0.3rem; border-bottom: 1px solid #1e3a5f; }
+    ul { line-height: 1.5; }
+    .note { margin-top: 2rem; color: #93a4b8; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>AETHER SNAPSHOT</h1>
+  
+  <h2>Hyderabad</h2>
+  <p class="meta">Hyderabad, Bahadurpura mandal, Hyderabad, Telangana, India<br/>2026-08-18 05:28 UTC · radius 600 km</p>
+  <p><span class="risk">RISK LOW</span></p>
+  <div class="grid">
+    <div class="card"><div class="label">WEATHER</div><div>28.2°C light drizzle, next 6h rain 1.6 mm</div></div>
+    <div class="card"><div class="label">QUAKES</div><div>0</div></div>
+    <div class="card"><div class="label">FLIGHTS</div><div>40</div></div>
+    <div class="card"><div class="label">ISS</div><div>-51.50, -153.43 (14108 km)</div></div>
+  </div>
+  <ul><li>No significant quakes within 600 km and no heavy rain in the next 6h</li><li>Situational brief from public feeds — not an official warning</li></ul>
+  <table><thead><tr><th>Mag</th><th>km</th><th>Place</th></tr></thead><tbody><tr><td colspan='3'>None in radius</td></tr></tbody></table>
+
+
+  <h2>Tokyo</h2>
+  <p class="meta">東京都, 日本<br/>2026-08-18 05:28 UTC · radius 600 km</p>
+  <p><span class="risk">RISK LOW</span></p>
+  <div class="grid">
+    <div class="card"><div class="label">WEATHER</div><div>31.7°C mainly clear, next 6h rain 0.0 mm</div></div>
+    <div class="card"><div class="label">QUAKES</div><div>0</div></div>
+    <div class="card"><div class="label">FLIGHTS</div><div>40</div></div>
+    <div class="card"><div class="label">ISS</div><div>-51.50, -153.43 (11665 km)</div></div>
+  </div>
+  <ul><li>No significant quakes within 600 km and no heavy rain in the next 6h</li><li>Situational brief from public feeds — not an official warning</li></ul>
+  <table><thead><tr><th>Mag</th><th>km</th><th>Place</th></tr></thead><tbody><tr><td colspan='3'>None in radius</td></tr></tbody></table>
+
+  <p class="note">Static snapshot from public APIs. Run <code>aether scan Hyderabad</code> for a live brief. Not an official warning product.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,7 @@
+services:
+  aether:
+    build: .
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./.aether-cache:/app/.aether-cache
