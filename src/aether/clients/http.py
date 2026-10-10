@@ -9,7 +9,27 @@ from aether.cache import FileCache
 
 
 class ApiError(RuntimeError):
-    pass
+    def __init__(self, message: str, *, status: int | None = None) -> None:
+        super().__init__(message)
+        self.status = status
+
+    @property
+    def rate_limited(self) -> bool:
+        return self.status == 429
+
+
+def _describe(url: str, exc: Exception) -> tuple[str, int | None]:
+    host = httpx.URL(url).host
+    if isinstance(exc, httpx.HTTPStatusError):
+        status = exc.response.status_code
+        if status == 429:
+            return f"{host}: rate limited (HTTP 429)", status
+        return f"{host}: HTTP {status}", status
+    if isinstance(exc, httpx.TimeoutException):
+        return f"{host}: timed out", None
+    if isinstance(exc, httpx.HTTPError):
+        return f"{host}: connection failed", None
+    return f"{host}: unreadable response", None
 
 
 async def get_json(
@@ -32,12 +52,13 @@ async def get_json(
         response = await client.get(url, params=params, headers=merged)
         response.raise_for_status()
         data = response.json()
-    except httpx.HTTPError as exc:
+    except (httpx.HTTPError, ValueError) as exc:
         if cache and cache_key:
             stale = cache.get_stale(cache_key)
             if stale is not None:
                 return stale
-        raise ApiError(f"{url}: {exc}") from exc
+        message, status = _describe(url, exc)
+        raise ApiError(message, status=status) from exc
     if cache and cache_key:
         cache.set(cache_key, data)
     return data

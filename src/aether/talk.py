@@ -92,17 +92,32 @@ def _has_word(text: str, word: str) -> bool:
     return re.search(rf"\b{re.escape(word)}\b", text) is not None
 
 
+CHATTER = {
+    "hi", "hello", "hey", "hii", "yo", "sup", "thanks", "thank", "thx", "you", "lol", "lmao", "haha",
+    "hahaha", "hehe", "hmm", "huh", "what", "why", "who", "how", "nice", "cool", "wow", "test", "testing",
+    "nothing", "none", "idk", "no", "nope", "nah", "abc", "xyz", "asdf", "qwerty",
+}
+_LAUGH = re.compile(r"^(?:ha|he|hi|ho)+h?$")
+_MASH = re.compile(r"(.)\1{3,}")
+_BAD_CHARS = re.compile(r"[\d@#$%^&*()_+=<>{}\[\]\\/|~`;:\"]")
+MAX_PLACE_CHARS = 60
+
+
 def looks_like_place(text: str) -> bool:
-    text = _norm(text)
-    if not text or text in QUIT | MOVE | STAY | HELP:
+    text = _norm(text).strip(" ?.,!")
+    if not text or len(text) > MAX_PLACE_CHARS or text in QUIT | MOVE | STAY | HELP:
         return False
-    tokens = re.findall(r"[a-z]+", text)
-    if not tokens or len(tokens) > 5:
+    if _BAD_CHARS.search(text):
+        return False
+    tokens = re.findall(r"[^\W\d_]+", text)
+    if not tokens or len(tokens) > 5 or sum(len(token) for token in tokens) < 2:
+        return False
+    if any(_LAUGH.match(token) or _MASH.search(token) for token in tokens):
         return False
     if any(token in _VERBS for token in tokens) and not any(token in {"in", "at", "near"} for token in tokens):
         return False
     topic_words = {word for words in TOPICS.values() for word in words}
-    if all(token in topic_words or token in _VERBS for token in tokens):
+    if all(token in topic_words or token in _VERBS or token in CHATTER for token in tokens):
         return False
     return True
 

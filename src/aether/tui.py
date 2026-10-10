@@ -7,6 +7,8 @@ from textual.reactive import reactive
 from textual.widgets import Footer, Input, RichLog, Static
 
 from aether.atmosphere import field
+from aether.clients import PlaceNotFound
+from aether.clients.http import ApiError
 from aether.collect import build_brief_sync
 from aether.models import Brief
 from aether.sky import TWILIGHT, Sky, sky_from_brief
@@ -212,7 +214,7 @@ class AetherApp(App[None]):
 
     @on(Input.Submitted)
     def on_submit(self, event: Input.Submitted) -> None:
-        text = event.value.strip()
+        text = event.value.strip()[:200]
         event.input.value = ""
         if not text:
             return
@@ -231,8 +233,11 @@ class AetherApp(App[None]):
         if intent == "empty":
             self._speak(["Say a city, or weather / flights / quakes / ISS / events."])
             return
-        if intent in {"unknown", "help"} and self.brief is None:
-            self._speak(["That is not a city. Try Hyderabad, Tokyo, or London."])
+        if intent == "unknown" and self.brief is None:
+            self._speak(["That doesn't look like a place name. Try Hyderabad, Tokyo, or London."])
+            return
+        if intent == "help" and self.brief is None:
+            self._speak(["Name a city to start, then ask weather, flights, quakes, ISS, events, or risk."])
             return
         if intent == "unknown":
             self._speak(answer("unknown", self.brief))
@@ -269,20 +274,47 @@ class AetherApp(App[None]):
     def load_place(self, query: str) -> None:
         try:
             brief = build_brief_sync(query=query)
+        except PlaceNotFound as exc:
+            self.call_from_thread(self._not_found, exc)
+            return
+        except ApiError as exc:
+            self.call_from_thread(self._lookup_unavailable, query, str(exc))
+            return
+        except ValueError as exc:
+            self.call_from_thread(self._bad_input, str(exc))
+            return
         except Exception as exc:
-            self.call_from_thread(self._listen_failed, query, str(exc))
+            self.call_from_thread(self._lookup_unavailable, query, type(exc).__name__)
             return
         self.call_from_thread(self._listen_ok, brief)
 
-    def _listen_failed(self, query: str, _detail: str) -> None:
+    def _not_found(self, exc: PlaceNotFound) -> None:
         self.loading = False
-        self._speak([f"No lock on {query}.", "Name a real city."])
+        lines = [f"I can't find a place called '{exc.query}'. It doesn't look like a real city or town."]
+        if exc.suggestion:
+            lines.append(f"Did you mean {exc.suggestion}?")
+        lines.append("Try a city like Hyderabad, Tokyo, or London.")
+        self._speak(lines)
+
+    def _lookup_unavailable(self, query: str, detail: str) -> None:
+        self.loading = False
+        self._speak(
+            [
+                f"I couldn't look up '{query}' right now ({detail}).",
+                "That's the lookup service or your connection, not the place. Try again in a moment.",
+            ]
+        )
+
+    def _bad_input(self, detail: str) -> None:
+        self.loading = False
+        self._speak([detail])
 
     def _listen_ok(self, brief: Brief) -> None:
         self.loading = False
         self.brief = brief
         self.sky = sky_from_brief(brief)
         self._paint_hud()
+        self._speak([f"Locked on {brief.place.display_name}."])
         self._speak(summary_lines(brief))
 
 

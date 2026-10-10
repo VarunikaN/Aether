@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from html import escape
 from pathlib import Path
 
 from aether.models import Brief
@@ -39,11 +40,15 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 """
 
 
+def _down(brief: Brief, name: str) -> bool:
+    return any(item.name == name and not item.ok for item in brief.sources)
+
+
 def _brief_html(brief: Brief) -> str:
     weather = brief.weather
     weather_line = "unavailable"
     if weather:
-        weather_line = (
+        weather_line = escape(
             f"{weather.temp_c}°C {weather.weather_text}, next 6h rain {weather.next_6h_precip_mm} mm"
         )
     iss_line = "unavailable"
@@ -52,19 +57,26 @@ def _brief_html(brief: Brief) -> str:
         if brief.iss.distance_km is not None:
             iss_line += f" ({brief.iss.distance_km:.0f} km)"
     quake_rows = "".join(
-        f"<tr><td>{q.mag:.1f}</td><td>{q.distance_km:.0f}</td><td>{q.place}</td></tr>"
+        f"<tr><td>{q.mag:.1f}</td><td>{q.distance_km:.0f}</td><td>{escape(q.place)}</td></tr>"
         for q in brief.quakes[:8]
         if q.distance_km is not None
     ) or "<tr><td colspan='3'>None in radius</td></tr>"
-    reasons = "".join(f"<li>{item}</li>" for item in brief.risk.reasons)
+    if _down(brief, "usgs"):
+        quake_rows = "<tr><td colspan='3'>Quake feed unavailable</td></tr>"
+    reasons = "".join(f"<li>{escape(item)}</li>" for item in brief.risk.reasons)
+    degraded = [item.name for item in brief.sources if not item.ok]
+    degraded_html = f"<p class='meta'>Degraded feeds: {escape(', '.join(degraded))}</p>" if degraded else ""
+    quake_count = "unavailable" if _down(brief, "usgs") else str(len(brief.quakes))
+    flight_count = "unavailable" if _down(brief, "opensky") else str(len(brief.flights))
     return f"""
-  <h2>{brief.place.name}</h2>
-  <p class="meta">{brief.place.display_name}<br/>{brief.generated_at.strftime('%Y-%m-%d %H:%M UTC')} · radius {brief.radius_km:.0f} km</p>
-  <p><span class="risk">RISK {brief.risk.level}</span></p>
+  <h2>{escape(brief.place.name)}</h2>
+  <p class="meta">{escape(brief.place.display_name)}<br/>{brief.generated_at.strftime('%Y-%m-%d %H:%M UTC')} · radius {brief.radius_km:.0f} km</p>
+  <p><span class="risk">RISK {escape(brief.risk.level)}</span></p>
+  {degraded_html}
   <div class="grid">
     <div class="card"><div class="label">WEATHER</div><div>{weather_line}</div></div>
-    <div class="card"><div class="label">QUAKES</div><div>{len(brief.quakes)}</div></div>
-    <div class="card"><div class="label">FLIGHTS</div><div>{len(brief.flights)}</div></div>
+    <div class="card"><div class="label">QUAKES</div><div>{quake_count}</div></div>
+    <div class="card"><div class="label">FLIGHTS</div><div>{flight_count}</div></div>
     <div class="card"><div class="label">ISS</div><div>{iss_line}</div></div>
   </div>
   <ul>{reasons}</ul>

@@ -3,6 +3,21 @@ from __future__ import annotations
 from aether.models import Brief
 
 
+def _down(brief: Brief, name: str) -> bool:
+    return any(item.name == name and not item.ok for item in brief.sources)
+
+
+def _rate_limited(brief: Brief, name: str) -> bool:
+    return any(item.name == name and not item.ok and "429" in item.detail for item in brief.sources)
+
+
+def degraded_line(brief: Brief) -> str | None:
+    names = [item.name for item in brief.sources if not item.ok]
+    if not names:
+        return None
+    return f"Degraded feeds: {', '.join(names)}. Those parts are missing, not empty."
+
+
 def summary_lines(brief: Brief) -> list[str]:
     weather = brief.weather
     sky_line = "I could not read the sky."
@@ -14,20 +29,25 @@ def summary_lines(brief: Brief) -> list[str]:
             f"{brief.place.name} is {when}, {weather.weather_text}, {temp}. "
             f"{rain:.1f} mm of rain in the next six hours."
         )
-    quakes = (
-        f"{len(brief.quakes)} quake(s) inside {brief.radius_km:.0f} km."
-        if brief.quakes
-        else f"No M2.5+ quakes inside {brief.radius_km:.0f} km."
-    )
-    flights = f"{len(brief.flights)} aircraft in the box."
+    if _down(brief, "usgs"):
+        quakes = "Quake feed unavailable."
+    elif brief.quakes:
+        quakes = f"{len(brief.quakes)} quake(s) inside {brief.radius_km:.0f} km."
+    else:
+        quakes = f"No M2.5+ quakes inside {brief.radius_km:.0f} km."
+    flights = "Aircraft feed unavailable." if _down(brief, "opensky") else f"{len(brief.flights)} aircraft in the box."
     iss = "ISS position unknown."
     if brief.iss and brief.iss.distance_km is not None:
         iss = f"ISS is {brief.iss.distance_km:.0f} km from you."
-    return [
+    lines = [
         sky_line,
         f"Risk {brief.risk.level}. {quakes} {flights} {iss}",
-        "Say weather, flights, quakes, ISS, events — or a different city.",
     ]
+    note = degraded_line(brief)
+    if note:
+        lines.append(note)
+    lines.append("Say weather, flights, quakes, ISS, events — or a different city.")
+    return lines
 
 
 def weather_lines(brief: Brief) -> list[str]:
@@ -44,6 +64,11 @@ def weather_lines(brief: Brief) -> list[str]:
 
 
 def quake_lines(brief: Brief) -> list[str]:
+    if _down(brief, "usgs"):
+        return [
+            "The earthquake feed did not answer, so I can't say whether the ground is quiet.",
+            "Weather, flights, or a city name?",
+        ]
     if not brief.quakes:
         return [
             f"Quiet ground. Nothing M2.5+ within {brief.radius_km:.0f} km in the last day.",
@@ -58,11 +83,12 @@ def quake_lines(brief: Brief) -> list[str]:
 
 
 def flight_lines(brief: Brief) -> list[str]:
+    if _rate_limited(brief, "opensky"):
+        return ["OpenSky rate-limited this request (HTTP 429), so there is no flight data.", "Weather, ISS, or a city name?"]
+    if _down(brief, "opensky"):
+        return ["OpenSky did not answer, so there is no flight data.", "Weather, ISS, or a city name?"]
     if not brief.flights:
-        return [
-            "No airborne tracks in the box — OpenSky may be rate-limited.",
-            "Weather, ISS, or a city name?",
-        ]
+        return ["OpenSky answered, but no aircraft are airborne in the box.", "Weather, ISS, or a city name?"]
     lines = [f"{len(brief.flights)} airborne. Sample:"]
     for flight in brief.flights[:8]:
         alt = "—" if flight.altitude_m is None else f"{flight.altitude_m:.0f} m"
@@ -86,6 +112,8 @@ def iss_lines(brief: Brief | None) -> list[str]:
 
 
 def event_lines(brief: Brief) -> list[str]:
+    if _down(brief, "eonet"):
+        return ["NASA's event feed did not answer, so I can't say whether anything is open nearby.", "Risk, weather, or a city name?"]
     near = [item for item in brief.disasters if item.in_country]
     pool = near[:5] if near else brief.disasters[:3]
     if not pool:
