@@ -1,6 +1,6 @@
 [
   {
-    "generated_at": "2026-10-11T12:17:00.116149+00:00",
+    "generated_at": "2026-10-11T21:36:50.006440+00:00",
     "place": {
       "name": "Hyderabad",
       "lat": 17.360589,
@@ -11,384 +11,276 @@
     },
     "radius_km": 600.0,
     "weather": {
-      "temp_c": 30.9,
-      "wind_kmh": 12.8,
+      "temp_c": 25.7,
+      "wind_kmh": 6.6,
       "precip_mm": 0.0,
       "weather_code": 0,
       "weather_text": "clear",
       "next_6h_precip_mm": 0.0,
       "timezone": "Asia/Kolkata",
-      "is_day": true
+      "is_day": false
     },
     "quakes": [],
     "flights": [
       {
-        "icao24": "801643",
-        "callsign": "AXB143K",
+        "icao24": "801759",
+        "callsign": "IGO953",
         "origin_country": "India",
-        "lat": 15.7566,
-        "lon": 79.7128,
-        "altitude_m": 10363.2,
-        "velocity_ms": 224.18
+        "lat": 15.0597,
+        "lon": 79.3992,
+        "altitude_m": 9867.9,
+        "velocity_ms": 237.87
       },
       {
-        "icao24": "80163d",
-        "callsign": "IGO6578",
+        "icao24": "801744",
+        "callsign": "IGO6054",
         "origin_country": "India",
-        "lat": 15.4685,
-        "lon": 79.1986,
-        "altitude_m": 9761.22,
-        "velocity_ms": 202.05
+        "lat": 14.1158,
+        "lon": 77.9723,
+        "altitude_m": 7444.74,
+        "velocity_ms": 241.95
       },
       {
-        "icao24": "801621",
-        "callsign": "IGO512E",
-        "origin_country": "India",
-        "lat": 13.2085,
-        "lon": 77.3332,
-        "altitude_m": 2217.42,
-        "velocity_ms": 140.72
+        "icao24": "896194",
+        "callsign": "UAE75T",
+        "origin_country": "United Arab Emirates",
+        "lat": 14.8182,
+        "lon": 79.2001,
+        "altitude_m": 12192.0,
+        "velocity_ms": 252.16
       },
       {
-        "icao24": "80166d",
-        "callsign": "AXB846",
+        "icao24": "801824",
+        "callsign": "IGO832K",
         "origin_country": "India",
-        "lat": 14.5326,
-        "lon": 74.675,
-        "altitude_m": 9121.14,
-        "velocity_ms": 226.02
-      },
-      {
-        "icao24": "801685",
-        "callsign": "AXB1671",
-        "origin_country": "India",
-        "lat": 22.3413,
-        "lon": 73.4108,
-        "altitude_m": 11277.6,
-        "velocity_ms": 239.54
-      },
-      {
-        "icao24": "80164c",
-        "callsign": "IGO6011",
-        "origin_country": "India",
-        "lat": 18.4406,
-        "lon": 83.8013,
-        "altitude_m": 10058.4,
-        "velocity_ms": 237.58
-      },
-      {
-        "icao24": "8014b3",
-        "callsign": "IGO6774",
-        "origin_country": "India",
-        "lat": 18.3918,
-        "lon": 83.4989,
-        "altitude_m": 10668.0,
-        "velocity_ms": 254.17
-      },
-      {
-        "icao24": "8014ae",
-        "callsign": "AXB29K",
-        "origin_country": "India",
-        "lat": 18.2375,
-        "lon": 83.3915,
-        "altitude_m": 11582.4,
-        "velocity_ms": 216.18
-      },
-      {
-        "icao24": "8014e8",
-        "callsign": "IGO735L",
-        "origin_country": "India",
-        "lat": 18.5407,
-        "lon": 83.6093,
-        "altitude_m": 11582.4,
-        "velocity_ms": 213.21
-      },
-      {
-        "icao24": "8014f3",
-        "callsign": "AXB2945",
-        "origin_country": "India",
-        "lat": 17.9195,
-        "lon": 82.8856,
-        "altitude_m": 11277.6,
-        "velocity_ms": 247.3
-      },
-      {
-        "icao24": "8014d8",
-        "callsign": "IGO995",
-        "origin_country": "India",
-        "lat": 12.9653,
-        "lon": 80.1028,
-        "altitude_m": 342.9,
-        "velocity_ms": 64.49
-      },
-      {
-        "icao24": "80174d",
-        "callsign": "unknown",
-        "origin_country": "India",
-        "lat": 15.0529,
-        "lon": 78.3301,
-        "altitude_m": 10058.4,
-        "velocity_ms": 236.75
-      },
-      {
-        "icao24": "80175f",
-        "callsign": "IGO746L",
-        "origin_country": "India",
-        "lat": 13.6279,
-        "lon": 77.6853,
-        "altitude_m": 6461.76,
-        "velocity_ms": 202.57
-      },
-      {
-        "icao24": "801768",
-        "callsign": "unknown",
-        "origin_country": "India",
-        "lat": 19.0884,
-        "lon": 72.8505,
-        "altitude_m": 182.88,
-        "velocity_ms": 84.45
-      },
-      {
-        "icao24": "801738",
-        "callsign": "IGO42RY",
-        "origin_country": "India",
-        "lat": 13.1885,
-        "lon": 77.7836,
-        "altitude_m": 1592.58,
-        "velocity_ms": 108.04
-      },
-      {
-        "icao24": "80173d",
-        "callsign": "VTAOS",
-        "origin_country": "India",
-        "lat": 18.8491,
-        "lon": 73.0668,
-        "altitude_m": 3352.8,
-        "velocity_ms": 159.59
-      },
-      {
-        "icao24": "801784",
-        "callsign": "AXB883",
-        "origin_country": "India",
-        "lat": 16.9648,
-        "lon": 83.6756,
-        "altitude_m": 10363.2,
-        "velocity_ms": 224.16
-      },
-      {
-        "icao24": "801785",
-        "callsign": "AKJ1825",
-        "origin_country": "India",
-        "lat": 21.3546,
-        "lon": 73.0271,
-        "altitude_m": 10668.0,
-        "velocity_ms": 232.37
-      },
-      {
-        "icao24": "80177b",
-        "callsign": "AXB75E",
-        "origin_country": "India",
-        "lat": 14.6262,
-        "lon": 77.9782,
-        "altitude_m": 9471.66,
-        "velocity_ms": 226.58
-      },
-      {
-        "icao24": "801793",
-        "callsign": "IGO357Y",
-        "origin_country": "India",
-        "lat": 13.5668,
-        "lon": 80.1496,
-        "altitude_m": 4556.76,
-        "velocity_ms": 214.21
-      },
-      {
-        "icao24": "8015c9",
-        "callsign": "IGO216E",
-        "origin_country": "India",
-        "lat": 14.1321,
-        "lon": 78.6881,
-        "altitude_m": 8747.76,
-        "velocity_ms": 222.31
-      },
-      {
-        "icao24": "8015d2",
-        "callsign": "IGO7231",
-        "origin_country": "India",
-        "lat": 13.9678,
-        "lon": 78.5485,
-        "altitude_m": 4853.94,
-        "velocity_ms": 113.11
-      },
-      {
-        "icao24": "8015cb",
-        "callsign": "unknown",
-        "origin_country": "India",
-        "lat": 19.3958,
-        "lon": 74.0391,
-        "altitude_m": 6797.04,
-        "velocity_ms": 169.2
-      },
-      {
-        "icao24": "8015ab",
-        "callsign": "AKJ689K",
-        "origin_country": "India",
-        "lat": 13.6118,
-        "lon": 78.2738,
-        "altitude_m": 5364.48,
-        "velocity_ms": 191.18
-      },
-      {
-        "icao24": "8015e2",
-        "callsign": "IGO2101",
-        "origin_country": "India",
-        "lat": 13.0082,
-        "lon": 76.4035,
-        "altitude_m": 8442.96,
-        "velocity_ms": 193.88
-      },
-      {
-        "icao24": "8015e6",
-        "callsign": "IGO352K",
-        "origin_country": "India",
-        "lat": 13.0146,
-        "lon": 78.8361,
-        "altitude_m": 5181.6,
-        "velocity_ms": 205.96
-      },
-      {
-        "icao24": "801726",
-        "callsign": "IGO445Y",
-        "origin_country": "India",
-        "lat": 21.8292,
-        "lon": 73.2772,
-        "altitude_m": 7322.82,
-        "velocity_ms": 197.5
-      },
-      {
-        "icao24": "80186e",
-        "callsign": "IGO117",
-        "origin_country": "India",
-        "lat": 15.3171,
-        "lon": 73.9922,
-        "altitude_m": 3505.2,
-        "velocity_ms": 148.01
-      },
-      {
-        "icao24": "80053f",
-        "callsign": "AIC4KM",
-        "origin_country": "India",
-        "lat": 14.781,
-        "lon": 74.6173,
-        "altitude_m": 11894.82,
-        "velocity_ms": 227.31
-      },
-      {
-        "icao24": "8017a1",
-        "callsign": "AXB2023",
-        "origin_country": "India",
-        "lat": 13.9328,
-        "lon": 78.5077,
-        "altitude_m": 7399.02,
-        "velocity_ms": 203.05
-      },
-      {
-        "icao24": "8017a2",
-        "callsign": "AXB56L",
-        "origin_country": "India",
-        "lat": 13.2007,
-        "lon": 77.905,
-        "altitude_m": 2400.3,
-        "velocity_ms": 140.57
-      },
-      {
-        "icao24": "8016e0",
-        "callsign": "IGO597",
-        "origin_country": "India",
-        "lat": 12.7158,
-        "lon": 80.0413,
-        "altitude_m": 6324.6,
-        "velocity_ms": 192.27
-      },
-      {
-        "icao24": "8016ae",
-        "callsign": "AXB1538",
-        "origin_country": "India",
-        "lat": 13.1097,
-        "lon": 77.6371,
-        "altitude_m": 3307.08,
-        "velocity_ms": 154.95
-      },
-      {
-        "icao24": "8016d7",
-        "callsign": "IGO6113",
-        "origin_country": "India",
-        "lat": 17.5835,
-        "lon": 82.9146,
-        "altitude_m": 10675.62,
-        "velocity_ms": 242.37
-      },
-      {
-        "icao24": "801848",
-        "callsign": "AXB1345",
-        "origin_country": "India",
-        "lat": 13.3873,
-        "lon": 77.4249,
-        "altitude_m": 2773.68,
-        "velocity_ms": 133.71
-      },
-      {
-        "icao24": "8018b7",
-        "callsign": "IGO109",
-        "origin_country": "India",
-        "lat": 13.0844,
-        "lon": 76.6054,
-        "altitude_m": 7315.2,
-        "velocity_ms": 191.43
+        "lat": 13.1799,
+        "lon": 80.1623,
+        "altitude_m": 2430.78,
+        "velocity_ms": 165.58
       },
       {
         "icao24": "8018e1",
-        "callsign": "IGO943Y",
+        "callsign": "IGO5179",
         "origin_country": "India",
-        "lat": 14.9793,
-        "lon": 76.3013,
-        "altitude_m": 10553.7,
-        "velocity_ms": 241.06
+        "lat": 18.5118,
+        "lon": 73.5821,
+        "altitude_m": 9540.24,
+        "velocity_ms": 242.93
       },
       {
-        "icao24": "8018ad",
-        "callsign": "GOA5301",
+        "icao24": "8017e5",
+        "callsign": "IGO1339",
         "origin_country": "India",
-        "lat": 15.2284,
-        "lon": 74.8628,
-        "altitude_m": 5181.6,
-        "velocity_ms": 123.15
+        "lat": 13.9915,
+        "lon": 80.7968,
+        "altitude_m": 10660.38,
+        "velocity_ms": 233.52
       },
       {
-        "icao24": "8018c7",
-        "callsign": "IGO5031",
-        "origin_country": "India",
-        "lat": 19.0891,
-        "lon": 72.8955,
-        "altitude_m": 144.78,
-        "velocity_ms": 68.95
+        "icao24": "896214",
+        "callsign": "UAE349",
+        "origin_country": "United Arab Emirates",
+        "lat": 14.5945,
+        "lon": 79.7873,
+        "altitude_m": 10972.8,
+        "velocity_ms": 251.3
       },
       {
-        "icao24": "80192c",
-        "callsign": "IGO619",
+        "icao24": "80191b",
+        "callsign": "unknown",
         "origin_country": "India",
-        "lat": 20.3441,
-        "lon": 82.2861,
+        "lat": 19.0877,
+        "lon": 72.8188,
+        "altitude_m": 388.62,
+        "velocity_ms": 113.18
+      },
+      {
+        "icao24": "896409",
+        "callsign": "ETD498",
+        "origin_country": "United Arab Emirates",
+        "lat": 12.0596,
+        "lon": 79.6804,
+        "altitude_m": 11269.98,
+        "velocity_ms": 249.84
+      },
+      {
+        "icao24": "89655e",
+        "callsign": "UAE5AM",
+        "origin_country": "United Arab Emirates",
+        "lat": 14.9795,
+        "lon": 78.8735,
         "altitude_m": 11582.4,
-        "velocity_ms": 211.27
+        "velocity_ms": 250.32
+      },
+      {
+        "icao24": "8965fa",
+        "callsign": "ADY144",
+        "origin_country": "United Arab Emirates",
+        "lat": 13.7424,
+        "lon": 78.4598,
+        "altitude_m": 8282.94,
+        "velocity_ms": 220.99
+      },
+      {
+        "icao24": "896769",
+        "callsign": "ABY471",
+        "origin_country": "United Arab Emirates",
+        "lat": 13.7186,
+        "lon": 79.1509,
+        "altitude_m": 6888.48,
+        "velocity_ms": 226.39
+      },
+      {
+        "icao24": "896707",
+        "callsign": "UAE65T",
+        "origin_country": "United Arab Emirates",
+        "lat": 13.9131,
+        "lon": 80.1216,
+        "altitude_m": 11277.6,
+        "velocity_ms": 257.78
+      },
+      {
+        "icao24": "8965d0",
+        "callsign": "FDB570",
+        "origin_country": "United Arab Emirates",
+        "lat": 12.2267,
+        "lon": 76.3495,
+        "altitude_m": 10972.8,
+        "velocity_ms": 239.69
+      },
+      {
+        "icao24": "040131",
+        "callsign": "ETH645",
+        "origin_country": "Ethiopia",
+        "lat": 13.1667,
+        "lon": 78.1888,
+        "altitude_m": 11582.4,
+        "velocity_ms": 252.58
+      },
+      {
+        "icao24": "406f74",
+        "callsign": "BAW130",
+        "origin_country": "United Kingdom",
+        "lat": 13.3112,
+        "lon": 77.8424,
+        "altitude_m": 2125.98,
+        "velocity_ms": 142.76
+      },
+      {
+        "icao24": "040237",
+        "callsign": "ETH697",
+        "origin_country": "Ethiopia",
+        "lat": 13.1815,
+        "lon": 77.3542,
+        "altitude_m": 10126.98,
+        "velocity_ms": 237.96
+      },
+      {
+        "icao24": "040242",
+        "callsign": "ETH629",
+        "origin_country": "Ethiopia",
+        "lat": 12.8862,
+        "lon": 81.2579,
+        "altitude_m": 9753.6,
+        "velocity_ms": 265.16
+      },
+      {
+        "icao24": "7c8069",
+        "callsign": "QFA10",
+        "origin_country": "Australia",
+        "lat": 13.2197,
+        "lon": 79.7464,
+        "altitude_m": 11269.98,
+        "velocity_ms": 250.83
+      },
+      {
+        "icao24": "80140c",
+        "callsign": "IGO240M",
+        "origin_country": "India",
+        "lat": 13.3572,
+        "lon": 77.3843,
+        "altitude_m": 2217.42,
+        "velocity_ms": 129.02
+      },
+      {
+        "icao24": "406a9c",
+        "callsign": "BAW35",
+        "origin_country": "United Kingdom",
+        "lat": 15.3887,
+        "lon": 79.737,
+        "altitude_m": 12489.18,
+        "velocity_ms": 247.66
+      },
+      {
+        "icao24": "80156d",
+        "callsign": "IGO721",
+        "origin_country": "India",
+        "lat": 13.1818,
+        "lon": 75.0194,
+        "altitude_m": 11582.4,
+        "velocity_ms": 234.6
+      },
+      {
+        "icao24": "8013cc",
+        "callsign": "AIC1ZH",
+        "origin_country": "India",
+        "lat": 14.429,
+        "lon": 76.6578,
+        "altitude_m": 9700.26,
+        "velocity_ms": 228.84
+      },
+      {
+        "icao24": "484561",
+        "callsign": "KLM836",
+        "origin_country": "Kingdom of the Netherlands",
+        "lat": 21.6221,
+        "lon": 84.0515,
+        "altitude_m": 9144.0,
+        "velocity_ms": 252.14
+      },
+      {
+        "icao24": "770590",
+        "callsign": "ALK153",
+        "origin_country": "Sri Lanka",
+        "lat": 12.0494,
+        "lon": 79.7659,
+        "altitude_m": 10668.0,
+        "velocity_ms": 252.7
+      },
+      {
+        "icao24": "8966fb",
+        "callsign": "UAE397",
+        "origin_country": "United Arab Emirates",
+        "lat": 16.294,
+        "lon": 73.7151,
+        "altitude_m": 12192.0,
+        "velocity_ms": 245.02
+      },
+      {
+        "icao24": "4d24db",
+        "callsign": "unknown",
+        "origin_country": "Malta",
+        "lat": 15.3165,
+        "lon": 73.1792,
+        "altitude_m": 10058.4,
+        "velocity_ms": 267.66
+      },
+      {
+        "icao24": "7505c5",
+        "callsign": "ALK141",
+        "origin_country": "Malaysia",
+        "lat": 19.0891,
+        "lon": 72.8975,
+        "altitude_m": 152.4,
+        "velocity_ms": 76.67
       }
     ],
     "iss": {
-      "lat": 48.104914663613,
-      "lon": -58.550187723307,
-      "altitude_km": 429.91788200625,
-      "timestamp": "2026-10-11T12:16:57+00:00",
-      "distance_km": 11579.3
+      "lat": 50.817872154707,
+      "lon": 172.82563102923,
+      "altitude_km": 430.44613045351,
+      "timestamp": "2026-10-11T21:36:49+00:00",
+      "distance_km": 8818.6
     },
     "disasters": [
       {
@@ -398,11 +290,11 @@
           "Severe Storms"
         ],
         "url": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_25046",
-        "date": "2026-10-11T06:00:00Z",
+        "date": "2026-10-11T12:00:00Z",
         "in_country": false,
-        "lat": 25.3,
-        "lon": 147.8,
-        "distance_km": 7160.4
+        "lat": 26.2,
+        "lon": 147.4,
+        "distance_km": 7107.2
       },
       {
         "title": "Super Typhoon Choi-wan",
@@ -515,17 +407,17 @@
         "detail": "ok"
       },
       {
+        "name": "eonet",
+        "ok": true,
+        "detail": "ok"
+      },
+      {
         "name": "iss",
         "ok": true,
         "detail": "ok"
       },
       {
         "name": "open-meteo",
-        "ok": true,
-        "detail": "ok"
-      },
-      {
-        "name": "eonet",
         "ok": true,
         "detail": "ok"
       },
@@ -537,7 +429,7 @@
     ]
   },
   {
-    "generated_at": "2026-10-11T12:17:01.533884+00:00",
+    "generated_at": "2026-10-11T21:36:51.407028+00:00",
     "place": {
       "name": "Tokyo",
       "lat": 35.6768601,
@@ -548,384 +440,395 @@
     },
     "radius_km": 600.0,
     "weather": {
-      "temp_c": 19.5,
-      "wind_kmh": 5.4,
+      "temp_c": 16.9,
+      "wind_kmh": 6.6,
       "precip_mm": 0.0,
       "weather_code": 0,
       "weather_text": "clear",
       "next_6h_precip_mm": 0.0,
       "timezone": "Asia/Tokyo",
-      "is_day": false
+      "is_day": true
     },
-    "quakes": [],
+    "quakes": [
+      {
+        "mag": 4.7,
+        "place": "6 km ESE of T\u014dgane, Japan",
+        "lat": 35.5301,
+        "lon": 140.4377,
+        "depth_km": 55.788,
+        "time_utc": "2026-10-11T16:24:25.015000+00:00",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1l7",
+        "distance_km": 63.1
+      }
+    ],
     "flights": [
       {
-        "icao24": "8744f6",
-        "callsign": "ANA79",
+        "icao24": "84d283",
+        "callsign": "JJP12",
         "origin_country": "Japan",
-        "lat": 37.5115,
-        "lon": 140.1961,
-        "altitude_m": 11239.5,
-        "velocity_ms": 259.61
+        "lat": 34.8268,
+        "lon": 140.4376,
+        "altitude_m": 5059.68,
+        "velocity_ms": 180.05
       },
       {
-        "icao24": "851914",
-        "callsign": "JAL486",
-        "origin_country": "Japan",
-        "lat": 34.4236,
-        "lon": 136.3887,
-        "altitude_m": 10058.4,
-        "velocity_ms": 252.79
-      },
-      {
-        "icao24": "aa931d",
-        "callsign": "UAL889",
-        "origin_country": "United States",
-        "lat": 37.6443,
-        "lon": 139.3857,
-        "altitude_m": 10668.0,
-        "velocity_ms": 284.13
-      },
-      {
-        "icao24": "885230",
-        "callsign": "THA8095",
-        "origin_country": "Thailand",
-        "lat": 33.0459,
-        "lon": 135.3228,
-        "altitude_m": 11582.4,
-        "velocity_ms": 240.15
-      },
-      {
-        "icao24": "87455c",
-        "callsign": "ANA97",
-        "origin_country": "Japan",
-        "lat": 34.9612,
-        "lon": 138.0215,
-        "altitude_m": 7307.58,
-        "velocity_ms": 235.12
-      },
-      {
-        "icao24": "85188c",
-        "callsign": "JAL266",
-        "origin_country": "Japan",
-        "lat": 34.6495,
-        "lon": 137.3332,
-        "altitude_m": 11277.6,
-        "velocity_ms": 246.58
-      },
-      {
-        "icao24": "87453a",
-        "callsign": "ANA40",
-        "origin_country": "Japan",
-        "lat": 35.3338,
-        "lon": 139.8823,
-        "altitude_m": 1226.82,
-        "velocity_ms": 91.32
-      },
-      {
-        "icao24": "841b6a",
-        "callsign": "SFJ16",
-        "origin_country": "Japan",
-        "lat": 34.5709,
-        "lon": 136.6962,
-        "altitude_m": 11887.2,
-        "velocity_ms": 244.15
-      },
-      {
-        "icao24": "8733bc",
-        "callsign": "ANA81",
-        "origin_country": "Japan",
-        "lat": 38.5748,
-        "lon": 140.4847,
+        "icao24": "4400d6",
+        "callsign": "EMO75",
+        "origin_country": "Austria",
+        "lat": 32.8601,
+        "lon": 136.755,
         "altitude_m": 12496.8,
-        "velocity_ms": 266.6
+        "velocity_ms": 278.53
       },
       {
-        "icao24": "84c43e",
-        "callsign": "SFJ91",
-        "origin_country": "Japan",
-        "lat": 35.4581,
-        "lon": 139.7975,
-        "altitude_m": 2453.64,
-        "velocity_ms": 146.11
+        "icao24": "ab274f",
+        "callsign": "N818CJ",
+        "origin_country": "United States",
+        "lat": 34.4488,
+        "lon": 135.2366,
+        "altitude_m": 182.88,
+        "velocity_ms": 96.11
       },
       {
-        "icao24": "780a89",
-        "callsign": "CPA810",
+        "icao24": "a4c3e4",
+        "callsign": "GTI7143",
+        "origin_country": "United States",
+        "lat": 35.5112,
+        "lon": 140.5931,
+        "altitude_m": 1866.9,
+        "velocity_ms": 96.83
+      },
+      {
+        "icao24": "780a67",
+        "callsign": "CPA872",
         "origin_country": "China",
-        "lat": 35.8693,
-        "lon": 142.8408,
+        "lat": 35.9247,
+        "lon": 143.8025,
         "altitude_m": 10058.4,
-        "velocity_ms": 280.65
+        "velocity_ms": 275.61
       },
       {
-        "icao24": "780a0e",
-        "callsign": "CPA502",
+        "icao24": "780ab7",
+        "callsign": "unknown",
         "origin_country": "China",
-        "lat": 34.4365,
-        "lon": 135.2491,
-        "altitude_m": -38.1,
-        "velocity_ms": 0.0
+        "lat": 32.4699,
+        "lon": 133.7666,
+        "altitude_m": 10058.4,
+        "velocity_ms": 282.3
       },
       {
-        "icao24": "a63dff",
-        "callsign": "DAL170",
-        "origin_country": "United States",
-        "lat": 37.9966,
-        "lon": 141.8482,
-        "altitude_m": 11277.6,
-        "velocity_ms": 293.28
-      },
-      {
-        "icao24": "a4418d",
-        "callsign": "UAL849",
-        "origin_country": "United States",
-        "lat": 31.4958,
-        "lon": 139.9132,
-        "altitude_m": 10972.8,
-        "velocity_ms": 250.52
-      },
-      {
-        "icao24": "841f65",
-        "callsign": "JAL193",
-        "origin_country": "Japan",
-        "lat": 35.9754,
-        "lon": 138.5763,
-        "altitude_m": 7315.2,
-        "velocity_ms": 211.79
-      },
-      {
-        "icao24": "840caf",
-        "callsign": "SJO838",
-        "origin_country": "Japan",
-        "lat": 40.311,
-        "lon": 141.532,
-        "altitude_m": 9144.0,
-        "velocity_ms": 223.34
-      },
-      {
-        "icao24": "781f2d",
-        "callsign": "CCA920",
-        "origin_country": "China",
-        "lat": 34.2799,
-        "lon": 133.451,
-        "altitude_m": 10363.2,
-        "velocity_ms": 232.64
-      },
-      {
-        "icao24": "780ac6",
-        "callsign": "HKE689",
-        "origin_country": "China",
-        "lat": 34.4081,
-        "lon": 134.9314,
-        "altitude_m": 3101.34,
-        "velocity_ms": 147.72
-      },
-      {
-        "icao24": "780abe",
-        "callsign": "HKE671",
-        "origin_country": "China",
-        "lat": 34.8821,
-        "lon": 136.7749,
-        "altitude_m": 411.48,
-        "velocity_ms": 101.8
-      },
-      {
-        "icao24": "76cc61",
-        "callsign": "SIA622",
-        "origin_country": "Singapore",
-        "lat": 34.351,
-        "lon": 135.1306,
-        "altitude_m": 579.12,
-        "velocity_ms": 82.03
-      },
-      {
-        "icao24": "76cc76",
-        "callsign": "SIA634",
-        "origin_country": "Singapore",
-        "lat": 34.8314,
-        "lon": 139.6096,
-        "altitude_m": 3581.4,
-        "velocity_ms": 154.54
-      },
-      {
-        "icao24": "846444",
-        "callsign": "JAL330",
-        "origin_country": "Japan",
-        "lat": 34.5681,
-        "lon": 137.9341,
-        "altitude_m": 10919.46,
-        "velocity_ms": 273.32
-      },
-      {
-        "icao24": "7c5320",
-        "callsign": "QFA80",
-        "origin_country": "Australia",
-        "lat": 34.9549,
-        "lon": 141.2276,
-        "altitude_m": 6865.62,
-        "velocity_ms": 225.47
-      },
-      {
-        "icao24": "85d42c",
-        "callsign": "ANA409",
-        "origin_country": "Japan",
-        "lat": 37.2655,
-        "lon": 140.0456,
-        "altitude_m": 7620.0,
-        "velocity_ms": 248.73
-      },
-      {
-        "icao24": "84b42f",
-        "callsign": "APJ584",
-        "origin_country": "Japan",
-        "lat": 35.5955,
-        "lon": 140.7243,
-        "altitude_m": 2240.28,
-        "velocity_ms": 148.17
-      },
-      {
-        "icao24": "840e10",
-        "callsign": "JAL531",
-        "origin_country": "Japan",
-        "lat": 36.4511,
-        "lon": 140.0501,
-        "altitude_m": 7825.74,
-        "velocity_ms": 236.4
-      },
-      {
-        "icao24": "89905a",
-        "callsign": "TTW701",
-        "origin_country": "Taiwan",
-        "lat": 35.7755,
-        "lon": 140.3669,
-        "altitude_m": 274.32,
-        "velocity_ms": 86.33
-      },
-      {
-        "icao24": "89901b",
-        "callsign": "CAL012",
-        "origin_country": "Taiwan",
-        "lat": 33.1664,
-        "lon": 134.622,
-        "altitude_m": 9448.8,
-        "velocity_ms": 272.44
-      },
-      {
-        "icao24": "868b50",
-        "callsign": "ANA650",
-        "origin_country": "Japan",
-        "lat": 34.63,
-        "lon": 137.1655,
+        "icao24": "75025a",
+        "callsign": "MAS88",
+        "origin_country": "Malaysia",
+        "lat": 33.5084,
+        "lon": 138.4397,
         "altitude_m": 11887.2,
-        "velocity_ms": 253.21
+        "velocity_ms": 260.89
       },
       {
-        "icao24": "040204",
-        "callsign": "ETH673",
-        "origin_country": "Ethiopia",
-        "lat": 35.9537,
-        "lon": 140.3149,
-        "altitude_m": 2636.52,
-        "velocity_ms": 142.29
+        "icao24": "872742",
+        "callsign": "ANA892",
+        "origin_country": "Japan",
+        "lat": 34.9465,
+        "lon": 139.6603,
+        "altitude_m": 2522.22,
+        "velocity_ms": 144.12
       },
       {
-        "icao24": "71c010",
-        "callsign": "KAL085",
-        "origin_country": "Republic of Korea",
-        "lat": 36.6552,
-        "lon": 134.3969,
-        "altitude_m": 9448.8,
-        "velocity_ms": 281.79
-      },
-      {
-        "icao24": "06a391",
-        "callsign": "QTR8177",
-        "origin_country": "Qatar",
-        "lat": 35.4802,
-        "lon": 138.017,
-        "altitude_m": 10226.04,
-        "velocity_ms": 224.89
-      },
-      {
-        "icao24": "8990a0",
-        "callsign": "CAL5382",
+        "icao24": "89902d",
+        "callsign": "TTW217",
         "origin_country": "Taiwan",
-        "lat": 33.6637,
-        "lon": 137.1488,
-        "altitude_m": 9448.8,
-        "velocity_ms": 268.82
-      },
-      {
-        "icao24": "71c073",
-        "callsign": "ASV704",
-        "origin_country": "Republic of Korea",
-        "lat": 35.9616,
-        "lon": 133.9372,
+        "lat": 34.1528,
+        "lon": 136.2033,
         "altitude_m": 10363.2,
-        "velocity_ms": 205.41
+        "velocity_ms": 212.81
       },
       {
-        "icao24": "84176b",
-        "callsign": "JAL8696",
-        "origin_country": "Japan",
-        "lat": 35.7127,
-        "lon": 140.4448,
-        "altitude_m": 487.68,
-        "velocity_ms": 76.76
-      },
-      {
-        "icao24": "851120",
-        "callsign": "JAL599",
-        "origin_country": "Japan",
-        "lat": 38.1546,
-        "lon": 140.3371,
-        "altitude_m": 11887.2,
-        "velocity_ms": 249.62
-      },
-      {
-        "icao24": "899107",
-        "callsign": "CAL5253",
-        "origin_country": "Taiwan",
-        "lat": 32.9393,
-        "lon": 133.5057,
-        "altitude_m": 11582.4,
-        "velocity_ms": 236.29
-      },
-      {
-        "icao24": "8511a8",
-        "callsign": "JAL208",
-        "origin_country": "Japan",
-        "lat": 34.6224,
-        "lon": 137.2523,
-        "altitude_m": 5471.16,
-        "velocity_ms": 185.11
-      },
-      {
-        "icao24": "ab30e6",
-        "callsign": "AAL128",
+        "icao24": "ac404f",
+        "callsign": "N889LS",
         "origin_country": "United States",
-        "lat": 37.5272,
-        "lon": 146.3308,
+        "lat": 34.2619,
+        "lon": 136.3179,
+        "altitude_m": 2994.66,
+        "velocity_ms": 153.34
+      },
+      {
+        "icao24": "86da5c",
+        "callsign": "ANA239",
+        "origin_country": "Japan",
+        "lat": 35.7348,
+        "lon": 139.6573,
+        "altitude_m": 5341.62,
+        "velocity_ms": 192.81
+      },
+      {
+        "icao24": "86ef28",
+        "callsign": "ANA856",
+        "origin_country": "Japan",
+        "lat": 35.4378,
+        "lon": 139.8513,
+        "altitude_m": 586.74,
+        "velocity_ms": 74.6
+      },
+      {
+        "icao24": "86ef62",
+        "callsign": "ANA8528",
+        "origin_country": "Japan",
+        "lat": 36.5211,
+        "lon": 133.2806,
         "altitude_m": 10668.0,
-        "velocity_ms": 285.96
+        "velocity_ms": 259.69
+      },
+      {
+        "icao24": "899134",
+        "callsign": "EVA607",
+        "origin_country": "Taiwan",
+        "lat": 36.3885,
+        "lon": 139.6952,
+        "altitude_m": 11582.4,
+        "velocity_ms": 220.81
+      },
+      {
+        "icao24": "86dd2a",
+        "callsign": "JAL70",
+        "origin_country": "Japan",
+        "lat": 34.2791,
+        "lon": 138.9949,
+        "altitude_m": 6781.8,
+        "velocity_ms": 240.9
       },
       {
         "icao24": "8511ca",
-        "callsign": "JAL192",
+        "callsign": "JAL623",
         "origin_country": "Japan",
-        "lat": 35.2239,
-        "lon": 139.729,
-        "altitude_m": 1783.08,
-        "velocity_ms": 111.32
+        "lat": 35.5328,
+        "lon": 139.8783,
+        "altitude_m": 998.22,
+        "velocity_ms": 109.79
+      },
+      {
+        "icao24": "a5277d",
+        "callsign": "GTI8676",
+        "origin_country": "United States",
+        "lat": 37.9142,
+        "lon": 140.4873,
+        "altitude_m": 10058.4,
+        "velocity_ms": 288.5
+      },
+      {
+        "icao24": "aba7d9",
+        "callsign": "FDX5077",
+        "origin_country": "United States",
+        "lat": 35.596,
+        "lon": 140.529,
+        "altitude_m": 1287.78,
+        "velocity_ms": 91.76
+      },
+      {
+        "icao24": "8418b4",
+        "callsign": "JAL42",
+        "origin_country": "Japan",
+        "lat": 35.3317,
+        "lon": 139.79,
+        "altitude_m": 1112.52,
+        "velocity_ms": 88.19
+      },
+      {
+        "icao24": "a42f8b",
+        "callsign": "UPS119",
+        "origin_country": "United States",
+        "lat": 32.4161,
+        "lon": 137.678,
+        "altitude_m": 10058.4,
+        "velocity_ms": 264.15
+      },
+      {
+        "icao24": "407cd1",
+        "callsign": "BAW7",
+        "origin_country": "United Kingdom",
+        "lat": 35.2053,
+        "lon": 139.7515,
+        "altitude_m": 1501.14,
+        "velocity_ms": 116.43
+      },
+      {
+        "icao24": "aabfa6",
+        "callsign": "NCR692",
+        "origin_country": "United States",
+        "lat": 35.1599,
+        "lon": 136.9609,
+        "altitude_m": 9448.8,
+        "velocity_ms": 271.39
+      },
+      {
+        "icao24": "78928c",
+        "callsign": "CRK606",
+        "origin_country": "China",
+        "lat": 33.0885,
+        "lon": 135.6189,
+        "altitude_m": 10668.0,
+        "velocity_ms": 255.04
+      },
+      {
+        "icao24": "86cf2b",
+        "callsign": "SNJ91",
+        "origin_country": "Japan",
+        "lat": 35.4726,
+        "lon": 139.6907,
+        "altitude_m": 3489.96,
+        "velocity_ms": 177.51
+      },
+      {
+        "icao24": "a0f06e",
+        "callsign": "N16MF",
+        "origin_country": "United States",
+        "lat": 35.0724,
+        "lon": 136.5138,
+        "altitude_m": 13106.4,
+        "velocity_ms": 225.29
+      },
+      {
+        "icao24": "861f66",
+        "callsign": "JAL726",
+        "origin_country": "Japan",
+        "lat": 33.5836,
+        "lon": 139.0131,
+        "altitude_m": 11277.6,
+        "velocity_ms": 245.31
+      },
+      {
+        "icao24": "782189",
+        "callsign": "CKK223",
+        "origin_country": "China",
+        "lat": 34.3868,
+        "lon": 139.1526,
+        "altitude_m": 8839.2,
+        "velocity_ms": 269.88
+      },
+      {
+        "icao24": "781054",
+        "callsign": "CSS363",
+        "origin_country": "China",
+        "lat": 33.6708,
+        "lon": 135.847,
+        "altitude_m": 8846.82,
+        "velocity_ms": 253.54
+      },
+      {
+        "icao24": "872f7e",
+        "callsign": "ANA830",
+        "origin_country": "Japan",
+        "lat": 34.2377,
+        "lon": 139.4158,
+        "altitude_m": 9608.82,
+        "velocity_ms": 256.5
+      },
+      {
+        "icao24": "88818d",
+        "callsign": "HVN310",
+        "origin_country": "Viet Nam",
+        "lat": 34.1462,
+        "lon": 138.8661,
+        "altitude_m": 11277.6,
+        "velocity_ms": 272.25
+      },
+      {
+        "icao24": "86eaea",
+        "callsign": "ANA208",
+        "origin_country": "Japan",
+        "lat": 34.7808,
+        "lon": 137.6638,
+        "altitude_m": 10317.48,
+        "velocity_ms": 273.22
+      },
+      {
+        "icao24": "485343",
+        "callsign": "KLM865",
+        "origin_country": "Kingdom of the Netherlands",
+        "lat": 36.775,
+        "lon": 135.9369,
+        "altitude_m": 11879.58,
+        "velocity_ms": 286.86
+      },
+      {
+        "icao24": "888217",
+        "callsign": "VJC932",
+        "origin_country": "Viet Nam",
+        "lat": 33.6448,
+        "lon": 135.5867,
+        "altitude_m": 10660.38,
+        "velocity_ms": 261.63
+      },
+      {
+        "icao24": "76cce6",
+        "callsign": "SIA22",
+        "origin_country": "Singapore",
+        "lat": 32.8416,
+        "lon": 138.7811,
+        "altitude_m": 11277.6,
+        "velocity_ms": 270.14
+      },
+      {
+        "icao24": "abd30f",
+        "callsign": "FDX5281",
+        "origin_country": "United States",
+        "lat": 35.7599,
+        "lon": 140.4109,
+        "altitude_m": 175.26,
+        "velocity_ms": 67.58
+      },
+      {
+        "icao24": "8464d2",
+        "callsign": "ANA985",
+        "origin_country": "Japan",
+        "lat": 35.2847,
+        "lon": 139.5092,
+        "altitude_m": 5623.56,
+        "velocity_ms": 196.27
+      },
+      {
+        "icao24": "8466c7",
+        "callsign": "NCA143",
+        "origin_country": "Japan",
+        "lat": 36.9715,
+        "lon": 142.6412,
+        "altitude_m": 11582.4,
+        "velocity_ms": 228.92
+      },
+      {
+        "icao24": "84b5ee",
+        "callsign": "SFJ70",
+        "origin_country": "Japan",
+        "lat": 34.0649,
+        "lon": 133.2352,
+        "altitude_m": 10005.06,
+        "velocity_ms": 261.59
+      },
+      {
+        "icao24": "86d215",
+        "callsign": "SNJ21",
+        "origin_country": "Japan",
+        "lat": 35.0966,
+        "lon": 138.7342,
+        "altitude_m": 8549.64,
+        "velocity_ms": 216.92
+      },
+      {
+        "icao24": "8681aa",
+        "callsign": "SKY551",
+        "origin_country": "Japan",
+        "lat": 33.5786,
+        "lon": 135.9333,
+        "altitude_m": 10309.86,
+        "velocity_ms": 218.65
       }
     ],
     "iss": {
-      "lat": 48.104914663613,
-      "lon": -58.550187723307,
-      "altitude_km": 429.91788200625,
-      "timestamp": "2026-10-11T12:16:57+00:00",
-      "distance_km": 10523.1
+      "lat": 50.817872154707,
+      "lon": 172.82563102923,
+      "altitude_km": 430.44613045351,
+      "timestamp": "2026-10-11T21:36:49+00:00",
+      "distance_km": 3123.7
     },
     "disasters": [
       {
@@ -948,11 +851,11 @@
           "Severe Storms"
         ],
         "url": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_25046",
-        "date": "2026-10-11T06:00:00Z",
+        "date": "2026-10-11T12:00:00Z",
         "in_country": true,
-        "lat": 25.3,
-        "lon": 147.8,
-        "distance_km": 1385.9
+        "lat": 26.2,
+        "lon": 147.4,
+        "distance_km": 1279.9
       },
       {
         "title": "Wildfire SECOND STREET, Benton, Washington",
@@ -1034,9 +937,9 @@
       }
     ],
     "risk": {
-      "level": "MODERATE",
+      "level": "ELEVATED",
       "reasons": [
-        "Nearby event: Super Typhoon Choi-wan",
+        "M4.7 quake 63 km away (6 km ESE of T\u014dgane, Japan)",
         "Situational brief from public feeds \u2014 not an official warning"
       ]
     },
@@ -1074,7 +977,7 @@
     ]
   },
   {
-    "generated_at": "2026-10-11T12:17:03.175304+00:00",
+    "generated_at": "2026-10-11T21:36:53.056138+00:00",
     "place": {
       "name": "San Francisco",
       "lat": 37.7879363,
@@ -1085,14 +988,14 @@
     },
     "radius_km": 600.0,
     "weather": {
-      "temp_c": 9.7,
-      "wind_kmh": 4.8,
+      "temp_c": 17.5,
+      "wind_kmh": 15.5,
       "precip_mm": 0.0,
       "weather_code": 0,
       "weather_text": "clear",
       "next_6h_precip_mm": 0.0,
       "timezone": "America/Los_Angeles",
-      "is_day": false
+      "is_day": true
     },
     "quakes": [
       {
@@ -1108,372 +1011,372 @@
     ],
     "flights": [
       {
-        "icao24": "a114ed",
-        "callsign": "UPS5955",
+        "icao24": "a60529",
+        "callsign": "N4871V",
         "origin_country": "United States",
-        "lat": 38.5675,
-        "lon": -119.2495,
-        "altitude_m": 9951.72,
-        "velocity_ms": 266.48
+        "lat": 37.8933,
+        "lon": -121.4496,
+        "altitude_m": 777.24,
+        "velocity_ms": 52.91
       },
       {
-        "icao24": "ac47b7",
-        "callsign": "SWA1708",
+        "icao24": "a41ee6",
+        "callsign": "N365AG",
         "origin_country": "United States",
-        "lat": 33.9481,
-        "lon": -118.4233,
-        "altitude_m": 327.66,
-        "velocity_ms": 77.09
+        "lat": 33.2377,
+        "lon": -116.3082,
+        "altitude_m": 5806.44,
+        "velocity_ms": 191.42
       },
       {
-        "icao24": "ab5e6c",
-        "callsign": "SWA4314",
+        "icao24": "a2228b",
+        "callsign": "ASA384",
         "origin_country": "United States",
-        "lat": 37.3736,
-        "lon": -121.6876,
-        "altitude_m": 8107.68,
-        "velocity_ms": 239.44
-      },
-      {
-        "icao24": "800584",
-        "callsign": "AIC173",
-        "origin_country": "India",
-        "lat": 42.769,
-        "lon": -127.1726,
+        "lat": 39.6758,
+        "lon": -120.6667,
         "altitude_m": 10972.8,
-        "velocity_ms": 284.32
+        "velocity_ms": 243.06
       },
       {
-        "icao24": "a28dc8",
-        "callsign": "UAL872",
+        "icao24": "a47597",
+        "callsign": "DAL946",
         "origin_country": "United States",
-        "lat": 39.8481,
-        "lon": -125.4039,
-        "altitude_m": 10668.0,
-        "velocity_ms": 271.11
+        "lat": 33.9432,
+        "lon": -118.3262,
+        "altitude_m": 365.76,
+        "velocity_ms": 76.19
       },
       {
-        "icao24": "ad9bc8",
-        "callsign": "AAL3082",
+        "icao24": "a247f0",
+        "callsign": "SKW3894",
         "origin_country": "United States",
-        "lat": 38.0001,
-        "lon": -122.0893,
-        "altitude_m": 3893.82,
-        "velocity_ms": 210.74
+        "lat": 33.5293,
+        "lon": -117.331,
+        "altitude_m": 7597.14,
+        "velocity_ms": 215.82
       },
       {
-        "icao24": "7380c1",
-        "callsign": "ELY005",
-        "origin_country": "Israel",
-        "lat": 34.1617,
-        "lon": -118.8064,
-        "altitude_m": 3810.0,
-        "velocity_ms": 171.98
-      },
-      {
-        "icao24": "a98c7a",
-        "callsign": "PAC992",
+        "icao24": "ab5d36",
+        "callsign": "N831MT",
         "origin_country": "United States",
-        "lat": 36.4414,
-        "lon": -121.8183,
-        "altitude_m": 10668.0,
-        "velocity_ms": 264.29
+        "lat": 37.2513,
+        "lon": -121.8155,
+        "altitude_m": 1104.9,
+        "velocity_ms": 105.49
       },
       {
-        "icao24": "a71429",
-        "callsign": "REH7",
+        "icao24": "accd10",
+        "callsign": "ASA41",
         "origin_country": "United States",
-        "lat": 38.7441,
-        "lon": -121.9236,
-        "altitude_m": 754.38,
-        "velocity_ms": 79.86
+        "lat": 37.6084,
+        "lon": -122.3448,
+        "altitude_m": 175.26,
+        "velocity_ms": 72.26
       },
       {
-        "icao24": "a76f46",
-        "callsign": "UAL3903",
+        "icao24": "a844a1",
+        "callsign": "N6316D",
         "origin_country": "United States",
-        "lat": 35.8579,
-        "lon": -121.1154,
-        "altitude_m": 9745.98,
-        "velocity_ms": 244.13
+        "lat": 35.4431,
+        "lon": -119.1843,
+        "altitude_m": 1181.1,
+        "velocity_ms": 57.89
       },
       {
-        "icao24": "780bb9",
-        "callsign": "CAO8415",
-        "origin_country": "China",
-        "lat": 37.1723,
-        "lon": -122.5836,
-        "altitude_m": 10668.0,
-        "velocity_ms": 261.03
-      },
-      {
-        "icao24": "a46603",
-        "callsign": "UAL2185",
+        "icao24": "aaf4d3",
+        "callsign": "N805DZ",
         "origin_country": "United States",
-        "lat": 42.4788,
-        "lon": -122.3127,
-        "altitude_m": 6934.2,
-        "velocity_ms": 217.06
+        "lat": 38.5383,
+        "lon": -121.851,
+        "altitude_m": 3924.3,
+        "velocity_ms": 63.74
       },
       {
-        "icao24": "a1cac9",
-        "callsign": "UAL1346",
+        "icao24": "ac358e",
+        "callsign": "EJA886",
         "origin_country": "United States",
-        "lat": 36.5704,
-        "lon": -124.3294,
-        "altitude_m": 8915.4,
-        "velocity_ms": 242.27
+        "lat": 34.1172,
+        "lon": -119.3701,
+        "altitude_m": 3429.0,
+        "velocity_ms": 165.73
       },
       {
-        "icao24": "a146ce",
-        "callsign": "SWA1323",
+        "icao24": "a9a1b6",
+        "callsign": "N72FF",
         "origin_country": "United States",
-        "lat": 34.814,
-        "lon": -117.0154,
-        "altitude_m": 10668.0,
-        "velocity_ms": 268.46
+        "lat": 35.442,
+        "lon": -119.1077,
+        "altitude_m": 769.62,
+        "velocity_ms": 49.6
       },
       {
-        "icao24": "aa7f48",
-        "callsign": "UAL1889",
+        "icao24": "a24931",
+        "callsign": "N2464D",
         "origin_country": "United States",
-        "lat": 38.7615,
-        "lon": -121.293,
-        "altitude_m": 2827.02,
-        "velocity_ms": 156.25
+        "lat": 32.9668,
+        "lon": -117.0509,
+        "altitude_m": 1562.1,
+        "velocity_ms": 48.75
       },
       {
-        "icao24": "a526ed",
-        "callsign": "ATN3313",
+        "icao24": "a831b2",
+        "callsign": "QXE2134",
         "origin_country": "United States",
-        "lat": 33.3271,
-        "lon": -118.1736,
-        "altitude_m": 3817.62,
-        "velocity_ms": 186.71
-      },
-      {
-        "icao24": "a2659a",
-        "callsign": "UAL190",
-        "origin_country": "United States",
-        "lat": 39.5509,
-        "lon": -125.3184,
-        "altitude_m": 10972.8,
-        "velocity_ms": 276.55
-      },
-      {
-        "icao24": "78180a",
-        "callsign": "CSN8032",
-        "origin_country": "China",
-        "lat": 32.3949,
-        "lon": -116.5095,
-        "altitude_m": 2065.02,
-        "velocity_ms": 110.92
-      },
-      {
-        "icao24": "a48499",
-        "callsign": "UPS947",
-        "origin_country": "United States",
-        "lat": 38.5109,
-        "lon": -118.7431,
-        "altitude_m": 10668.0,
-        "velocity_ms": 275.47
-      },
-      {
-        "icao24": "a3fbfc",
-        "callsign": "WGN212",
-        "origin_country": "United States",
-        "lat": 34.0068,
-        "lon": -118.4367,
-        "altitude_m": 2522.22,
-        "velocity_ms": 146.69
-      },
-      {
-        "icao24": "78071b",
-        "callsign": "HLF9869",
-        "origin_country": "China",
-        "lat": 34.6394,
-        "lon": -118.0732,
-        "altitude_m": 6019.8,
-        "velocity_ms": 214.42
-      },
-      {
-        "icao24": "abfc71",
-        "callsign": "SWA1988",
-        "origin_country": "United States",
-        "lat": 33.2848,
-        "lon": -116.185,
+        "lat": 41.7438,
+        "lon": -122.0851,
         "altitude_m": 10363.2,
-        "velocity_ms": 267.12
+        "velocity_ms": 219.44
       },
       {
-        "icao24": "abfd39",
-        "callsign": "unknown",
+        "icao24": "a59662",
+        "callsign": "N4593X",
         "origin_country": "United States",
-        "lat": 32.7074,
-        "lon": -121.9361,
-        "altitude_m": 10363.2,
-        "velocity_ms": 258.9
+        "lat": 34.3398,
+        "lon": -119.4153,
+        "altitude_m": 944.88,
+        "velocity_ms": 52.75
       },
       {
-        "icao24": "a5cc4c",
-        "callsign": "AAL432",
+        "icao24": "a4d97e",
+        "callsign": "SKW3058",
         "origin_country": "United States",
-        "lat": 32.7566,
-        "lon": -120.5856,
-        "altitude_m": 10066.02,
-        "velocity_ms": 267.85
+        "lat": 40.3209,
+        "lon": -122.1639,
+        "altitude_m": 10058.4,
+        "velocity_ms": 253.91
       },
       {
-        "icao24": "ab0ed6",
-        "callsign": "UAL211",
+        "icao24": "a6065d",
+        "callsign": "N488AM",
         "origin_country": "United States",
-        "lat": 35.1665,
-        "lon": -118.997,
-        "altitude_m": 5052.06,
-        "velocity_ms": 204.02
+        "lat": 37.7334,
+        "lon": -121.0202,
+        "altitude_m": 4061.46,
+        "velocity_ms": 193.48
       },
       {
-        "icao24": "a0b88c",
-        "callsign": "UAL652",
+        "icao24": "a65fcb",
+        "callsign": "N51HF",
         "origin_country": "United States",
-        "lat": 33.7447,
-        "lon": -117.2524,
-        "altitude_m": 8397.24,
-        "velocity_ms": 255.04
+        "lat": 37.3117,
+        "lon": -122.3122,
+        "altitude_m": 1615.44,
+        "velocity_ms": 57.29
       },
       {
-        "icao24": "a66576",
-        "callsign": "DAL658",
+        "icao24": "ad42fa",
+        "callsign": "N9536D",
         "origin_country": "United States",
-        "lat": 34.2017,
-        "lon": -120.0588,
-        "altitude_m": 5798.82,
-        "velocity_ms": 200.64
+        "lat": 34.2923,
+        "lon": -118.4982,
+        "altitude_m": 845.82,
+        "velocity_ms": 38.19
       },
       {
-        "icao24": "a11fc1",
-        "callsign": "UAL1806",
+        "icao24": "a7006f",
+        "callsign": "N550LK",
         "origin_country": "United States",
-        "lat": 38.4913,
-        "lon": -124.0215,
-        "altitude_m": 11277.6,
-        "velocity_ms": 261.85
+        "lat": 34.7181,
+        "lon": -117.4142,
+        "altitude_m": 5166.36,
+        "velocity_ms": 184.8
       },
       {
-        "icao24": "a1c66a",
-        "callsign": "UAL1169",
+        "icao24": "a26b51",
+        "callsign": "AAY1593",
         "origin_country": "United States",
-        "lat": 34.135,
-        "lon": -120.7649,
-        "altitude_m": 9875.52,
-        "velocity_ms": 268.82
+        "lat": 33.6627,
+        "lon": -117.8773,
+        "altitude_m": 304.8,
+        "velocity_ms": 72.55
       },
       {
-        "icao24": "a6a6b2",
-        "callsign": "N528AM",
+        "icao24": "ab5da3",
+        "callsign": "N831SB",
         "origin_country": "United States",
-        "lat": 36.2505,
-        "lon": -120.02,
-        "altitude_m": 1821.18,
-        "velocity_ms": 70.94
+        "lat": 34.136,
+        "lon": -117.2571,
+        "altitude_m": 670.56,
+        "velocity_ms": 41.11
       },
       {
-        "icao24": "aacd50",
-        "callsign": "UAL2865",
+        "icao24": "a7398e",
+        "callsign": "ASA773",
         "origin_country": "United States",
-        "lat": 34.4345,
-        "lon": -119.1837,
-        "altitude_m": 7734.3,
-        "velocity_ms": 223.39
-      },
-      {
-        "icao24": "a76516",
-        "callsign": "DAL40",
-        "origin_country": "United States",
-        "lat": 32.6962,
-        "lon": -119.5654,
-        "altitude_m": 8740.14,
-        "velocity_ms": 258.69
-      },
-      {
-        "icao24": "ac6118",
-        "callsign": "UAL1774",
-        "origin_country": "United States",
-        "lat": 37.0647,
-        "lon": -119.3827,
-        "altitude_m": 4953.0,
-        "velocity_ms": 187.88
-      },
-      {
-        "icao24": "a32af8",
-        "callsign": "FIRE3",
-        "origin_country": "United States",
-        "lat": 34.156,
-        "lon": -118.4174,
-        "altitude_m": 594.36,
-        "velocity_ms": 68.98
-      },
-      {
-        "icao24": "a5a10a",
-        "callsign": "AAL684",
-        "origin_country": "United States",
-        "lat": 33.8155,
-        "lon": -121.0179,
-        "altitude_m": 10050.78,
-        "velocity_ms": 263.49
-      },
-      {
-        "icao24": "aa86fb",
-        "callsign": "CKS7410",
-        "origin_country": "United States",
-        "lat": 36.8996,
-        "lon": -122.7091,
-        "altitude_m": 11277.6,
-        "velocity_ms": 274.19
-      },
-      {
-        "icao24": "0d0ed6",
-        "callsign": "AMX091",
-        "origin_country": "Mexico",
-        "lat": 37.6037,
-        "lon": -124.9453,
+        "lat": 39.1648,
+        "lon": -120.3087,
         "altitude_m": 11887.2,
-        "velocity_ms": 273.37
+        "velocity_ms": 220.33
       },
       {
-        "icao24": "a6504b",
-        "callsign": "ASA558",
+        "icao24": "a26b2b",
+        "callsign": "N255MG",
         "origin_country": "United States",
-        "lat": 42.8958,
-        "lon": -128.875,
-        "altitude_m": 11277.6,
-        "velocity_ms": 228.49
+        "lat": 36.298,
+        "lon": -119.3675,
+        "altitude_m": 327.66,
+        "velocity_ms": 48.07
       },
       {
-        "icao24": "a302a0",
-        "callsign": "SWA3273",
+        "icao24": "ac48e7",
+        "callsign": "N8909",
         "origin_country": "United States",
-        "lat": 33.6445,
-        "lon": -118.0131,
-        "altitude_m": 7719.06,
-        "velocity_ms": 223.78
+        "lat": 37.8814,
+        "lon": -121.2835,
+        "altitude_m": 411.48,
+        "velocity_ms": 43.98
       },
       {
-        "icao24": "a46b73",
-        "callsign": "N384PH",
+        "icao24": "a09418",
+        "callsign": "N13619",
         "origin_country": "United States",
-        "lat": 37.6028,
-        "lon": -120.9094,
-        "altitude_m": 381.0,
-        "velocity_ms": 42.81
+        "lat": 36.963,
+        "lon": -120.8005,
+        "altitude_m": 1524.0,
+        "velocity_ms": 55.13
+      },
+      {
+        "icao24": "a3a5cf",
+        "callsign": "WSN92",
+        "origin_country": "United States",
+        "lat": 40.1306,
+        "lon": -123.9079,
+        "altitude_m": 9448.8,
+        "velocity_ms": 225.36
+      },
+      {
+        "icao24": "0d111b",
+        "callsign": "VOI1853",
+        "origin_country": "Mexico",
+        "lat": 35.9177,
+        "lon": -120.083,
+        "altitude_m": 10660.38,
+        "velocity_ms": 224.37
+      },
+      {
+        "icao24": "aa92f9",
+        "callsign": "UAL59",
+        "origin_country": "United States",
+        "lat": 39.4474,
+        "lon": -122.8333,
+        "altitude_m": 10546.08,
+        "velocity_ms": 227.42
+      },
+      {
+        "icao24": "a1f109",
+        "callsign": "N224N",
+        "origin_country": "United States",
+        "lat": 38.4383,
+        "lon": -122.677,
+        "altitude_m": 975.36,
+        "velocity_ms": 91.17
+      },
+      {
+        "icao24": "ab28d7",
+        "callsign": "UAL520",
+        "origin_country": "United States",
+        "lat": 37.9634,
+        "lon": -121.8948,
+        "altitude_m": 4846.32,
+        "velocity_ms": 198.35
+      },
+      {
+        "icao24": "ab274c",
+        "callsign": "KOW818",
+        "origin_country": "United States",
+        "lat": 40.1961,
+        "lon": -120.5005,
+        "altitude_m": 14325.6,
+        "velocity_ms": 248.31
+      },
+      {
+        "icao24": "a23333",
+        "callsign": "N2406K",
+        "origin_country": "United States",
+        "lat": 38.4607,
+        "lon": -122.7375,
+        "altitude_m": 1043.94,
+        "velocity_ms": 57.42
+      },
+      {
+        "icao24": "a04e00",
+        "callsign": "DAL1254",
+        "origin_country": "United States",
+        "lat": 38.7194,
+        "lon": -121.0814,
+        "altitude_m": 8656.32,
+        "velocity_ms": 253.73
+      },
+      {
+        "icao24": "ad6755",
+        "callsign": "ASA753",
+        "origin_country": "United States",
+        "lat": 34.7458,
+        "lon": -119.3245,
+        "altitude_m": 7620.0,
+        "velocity_ms": 219.36
+      },
+      {
+        "icao24": "a97608",
+        "callsign": "ASA1371",
+        "origin_country": "United States",
+        "lat": 42.3484,
+        "lon": -121.4604,
+        "altitude_m": 10668.0,
+        "velocity_ms": 249.4
+      },
+      {
+        "icao24": "a2cb27",
+        "callsign": "N2796T",
+        "origin_country": "United States",
+        "lat": 35.2225,
+        "lon": -120.6145,
+        "altitude_m": 304.8,
+        "velocity_ms": 49.09
+      },
+      {
+        "icao24": "a4d5c7",
+        "callsign": "SKW3489",
+        "origin_country": "United States",
+        "lat": 32.6939,
+        "lon": -117.0264,
+        "altitude_m": 960.12,
+        "velocity_ms": 101.12
+      },
+      {
+        "icao24": "ab5b2b",
+        "callsign": "SWA2755",
+        "origin_country": "United States",
+        "lat": 38.6621,
+        "lon": -119.4973,
+        "altitude_m": 8740.14,
+        "velocity_ms": 265.37
+      },
+      {
+        "icao24": "a8435e",
+        "callsign": "SIS31",
+        "origin_country": "United States",
+        "lat": 37.549,
+        "lon": -118.8953,
+        "altitude_m": 12496.8,
+        "velocity_ms": 272.16
+      },
+      {
+        "icao24": "a12731",
+        "callsign": "UAL2623",
+        "origin_country": "United States",
+        "lat": 37.1901,
+        "lon": -123.327,
+        "altitude_m": 6797.04,
+        "velocity_ms": 200.95
       }
     ],
     "iss": {
-      "lat": 48.104914663613,
-      "lon": -58.550187723307,
-      "altitude_km": 429.91788200625,
-      "timestamp": "2026-10-11T12:16:57+00:00",
-      "distance_km": 5168.2
+      "lat": 50.817872154707,
+      "lon": 172.82563102923,
+      "altitude_km": 430.44613045351,
+      "timestamp": "2026-10-11T21:36:49+00:00",
+      "distance_km": 5175.3
     },
     "disasters": [
       {
@@ -1516,6 +1419,19 @@
         "distance_km": 715.2
       },
       {
+        "title": "Cyclone Rachel",
+        "status": "open",
+        "countries": [
+          "Severe Storms"
+        ],
+        "url": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_24875",
+        "date": "2026-10-11T12:00:00Z",
+        "in_country": true,
+        "lat": 33.9,
+        "lon": -115.4,
+        "distance_km": 765.0
+      },
+      {
         "title": "Prescribed Fire Wolf A RX, Grant, Oregon",
         "status": "open",
         "countries": [
@@ -1527,19 +1443,6 @@
         "lat": 44.1182,
         "lon": -118.7167,
         "distance_km": 768.9
-      },
-      {
-        "title": "Hurricane Rachel",
-        "status": "open",
-        "countries": [
-          "Severe Storms"
-        ],
-        "url": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_24875",
-        "date": "2026-10-11T06:00:00Z",
-        "in_country": true,
-        "lat": 31.8,
-        "lon": -116.3,
-        "distance_km": 868.1
       },
       {
         "title": "Wildfire Hatch Grade, Walla Walla, Washington",
